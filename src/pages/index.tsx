@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Starter Pack</title>
+        <title>NextGen Innovators</title>
         <meta name="description" content="description example" />
-        <link rel="icon" href="" /> {/* TODO: Add logo.jpg */}
+        <link rel="icon" href="/logo.png" />
       </Head>
       <main>
         <NonProfitWebsite/>

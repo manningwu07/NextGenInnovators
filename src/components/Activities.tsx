@@ -6,24 +6,24 @@ import { Activity } from "~/types/event";
 const activities: Activity[] = [
   {
     id: 1,
-    title: "Community Cleanup",
+    title: "Title",
     image: "/placeholder.svg?height=200&width=300",
     description:
-      "Join us for our annual community cleanup event. Help make our neighborhood beautiful!",
+      "Description",
   },
   {
     id: 2,
-    title: "Fundraising Gala",
+    title: "Title",
     image: "/placeholder.svg?height=200&width=300",
     description:
-      "An elegant evening of dinner, dancing, and raising funds for our cause.",
+      "Description",
   },
   {
     id: 3,
-    title: "Youth Workshop",
+    title: "Title",
     image: "/placeholder.svg?height=200&width=300",
     description:
-      "Empowering the next generation through interactive workshops and mentoring.",
+      "Description",
   },
 ];
 
