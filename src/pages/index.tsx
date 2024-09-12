@@ -1,5 +1,5 @@
 import Head from "next/head";
-import NavBar from "~/components/bigUI/NavBar";
+import NonProfitWebsite from "./non-profit-website";
 
 export default function Home() {
   return (
@@ -9,8 +9,8 @@ export default function Home() {
         <meta name="description" content="description example" />
         <link rel="icon" href="" /> {/* TODO: Add logo.jpg */}
       </Head>
-      <main className="min-h-screen bg-gradient-to-b from-[#2f026db9] to-[#090913]">
-        <NavBar />
+      <main>
+        <NonProfitWebsite/>
       </main>
     </>
   );
