@@ -22,7 +22,7 @@ export default function DonateModal() {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="relative max-w-lg rounded-lg p-8 bg-white text-black shadow-lg">
+          <div className="relative !max-w-lg rounded-lg p-8 bg-white text-black shadow-lg">
             {/* Close Button */}
             <button
               className="absolute right-2 top-2 text-gray-500 hover:text-gray-800"

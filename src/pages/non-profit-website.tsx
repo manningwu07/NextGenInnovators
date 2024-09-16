@@ -4,6 +4,7 @@ import NavBar from "~/components/NavBar";
 import Activities from "~/components/Activities";
 import TeamMembers from "~/components/TeamMembers";
 import DonateModal from "~/components/Donate";
+import Link from "next/link";
 
 export default function NonProfitWebsite() {
   return (
@@ -17,12 +18,14 @@ export default function NonProfitWebsite() {
             Non-Profit Organization devoted to teaching students about
             engineering
           </p>
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-          >
-            <ChevronDown size={32} className="mx-auto" />
-          </motion.div>
+          <Link href="/#about">
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <ChevronDown size={32} className="mx-auto" />
+            </motion.div>
+          </Link>
         </div>
       </header>
 
@@ -54,10 +57,10 @@ export default function NonProfitWebsite() {
                 </p>
               </div>
               <div className="rounded-lg bg-gray-100 p-6">
-                <h3 className="mb-4 text-2xl font-semibold text-center">Our Mission</h3>
-                <p className = "text-center text-lg">
-                  Type some stuff here
-                </p>
+                <h3 className="mb-4 text-center text-2xl font-semibold">
+                  Our Mission
+                </h3>
+                <p className="text-center text-lg">Type some stuff here</p>
               </div>
             </div>
           </div>
@@ -80,16 +83,21 @@ export default function NonProfitWebsite() {
                   Your contribution helps us continue our important work in the
                   community.
                 </p>
-                <DonateModal/>
+                <DonateModal />
               </div>
               <div className="rounded-lg bg-purple-600 p-8 text-white">
                 <h3 className="mb-4 text-2xl font-bold">Join Us</h3>
                 <p className="mb-4">
                   Become a volunteer and make a difference in your community.
                 </p>
-                <button className="rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-purple-100">
-                  Sign Up
-                </button>
+                <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdnMbSLwUEZ47H2FFUTjAqzW5npT9uHt3jeObDHfjtZ5JckUw/viewform"
+                  target="_blank"
+                >
+                  <button className="rounded-full bg-white px-6 py-2 font-semibold text-purple-600 transition-colors hover:bg-purple-100">
+                    Sign Up
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

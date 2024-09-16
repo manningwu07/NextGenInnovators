@@ -677,6 +677,10 @@ video {
   max-width: 20rem;
 }
 
+.\!max-w-lg {
+  max-width: 32rem /* 512px */ !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -900,6 +904,11 @@ video {
   letter-spacing: -0.025em;
 }
 
+.\!text-red-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(220 38 38 / var(--tw-text-opacity)) /* #dc2626 */ !important;
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -962,6 +971,10 @@ video {
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {

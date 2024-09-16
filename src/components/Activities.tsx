@@ -5,21 +5,18 @@ import { Activity } from "~/types/event";
 
 const activities: Activity[] = [
   {
-    id: 1,
     title: "Title",
     image: "/placeholder.svg?height=200&width=300",
     description:
       "Description",
   },
   {
-    id: 2,
     title: "Title",
     image: "/placeholder.svg?height=200&width=300",
     description:
       "Description",
   },
   {
-    id: 3,
     title: "Title",
     image: "/placeholder.svg?height=200&width=300",
     description:
@@ -36,7 +33,7 @@ export default function Activities() {
       <div className="grid gap-8 md:grid-cols-3">
         {activities.map((activity) => (
           <motion.div
-            key={activity.id}
+            key={activities.indexOf(activity)}
             className="cursor-pointer overflow-hidden rounded-lg bg-white shadow-md"
             whileHover={{ scale: 1.05 }}
             onClick={() => setSelectedActivity(activity)}
