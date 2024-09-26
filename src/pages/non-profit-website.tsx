@@ -53,7 +53,7 @@ export default function NonProfitWebsite() {
       </header>
 
       <main>
-        <section id="about" className="scroll-smooth py-16">
+        <section id="about" className="scroll-smooth py-24">
           <div className="container mx-auto px-4">
             <h2 className="mb-8 text-center text-3xl font-bold">About Us</h2>
             <div className="grid gap-8 md:grid-cols-2">
@@ -96,25 +96,25 @@ export default function NonProfitWebsite() {
           </div>
         </section>
 
-        <section id="upcomingEvents" className="bg-gray-100 py-16">
+        <section id="upcomingEvents" className="bg-gray-100 py-24">
           <Activities
             title={"Upcoming Events"}
             activities={upcomingActivities}
           />
         </section>
 
-        <section id="pastEvents" className="bg-gray-100 py-16">
+        <section id="pastEvents" className="bg-gray-100 py-24">
           <Activities
             title={"What we've done in the past"}
             activities={pastActivities}
           />
         </section>
 
-        <section id="team" className="py-16">
+        <section id="team" className="py-24">
           <TeamMembers />
         </section>
 
-        <section id="join" className="bg-gray-100 py-16">
+        <section id="join" className="bg-gray-100 py-24">
           <div className="container mx-auto px-4">
             <div className="grid gap-8 md:grid-cols-2">
               <div className="rounded-lg bg-blue-600 p-8">
@@ -145,6 +145,12 @@ export default function NonProfitWebsite() {
       </main>
 
       <footer className="bg-gray-800 py-8 text-white">
+        <div className="flex justify-center mb-3 text-lg"> 
+          <p>Contact us:&nbsp;</p>
+          <Link href="mailto:nextgeninnovators24@gmail.com">
+            <span className="text-white hover:underline">nextgeninnovators24@gmail.com</span>
+          </Link>
+        </div>
         <div className="container mx-auto px-4 text-center">
           <p>&copy; Copyright stuff add here. All rights reserved.</p>
         </div>
