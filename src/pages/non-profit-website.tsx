@@ -22,23 +22,32 @@ export default function NonProfitWebsite() {
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <NavBar />
 
-      <header className="bg-gradient-to-r from-blue-500 to-purple-600 pb-16 pt-24 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-4 text-5xl font-bold">NextGen Innovators</h1>
-          <p className="mb-8 text-xl">
-            Non-Profit Organization devoted to teaching students about
-            engineering
-          </p>
-          <div
-            onClick={() => handleScroll("#about")}
-            className="cursor-pointer"
-          >
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
+      <header
+        style={{ backgroundImage: "url('/landing_page_bg.jpg')" }}
+        className="relative mt-16 h-[423px] w-full bg-cover bg-center bg-no-repeat text-white md:h-auto"
+      >
+        <div className="md:relative w-full " style = {{aspectRatio: "16/9"}}>
+          <div className="absolute inset-0 z-0 bg-black opacity-60"></div>
+
+          <div className="relative z-10 text-center h-full flex flex-col justify-center">
+            <div className="mt-60 sm:mt-28 md:mt-0">&nbsp;</div> 
+            <h1 className="mb-4 text-5xl font-bold">NextGen Innovators</h1>
+            <p className="mb-10 text-xl">
+              Non-Profit Organization devoted to teaching students about
+              engineering
+            </p>
+
+            <div
+              onClick={() => handleScroll("#about")}
+              className="mb-10 cursor-pointer"
             >
-              <ChevronDown size={32} className="mx-auto" />
-            </motion.div>
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+              >
+                <ChevronDown size={32} className="mx-auto" />
+              </motion.div>
+            </div>
           </div>
         </div>
       </header>
@@ -88,11 +97,17 @@ export default function NonProfitWebsite() {
         </section>
 
         <section id="upcomingEvents" className="bg-gray-100 py-16">
-          <Activities title={"Upcoming Events"} activities={upcomingActivities} />
+          <Activities
+            title={"Upcoming Events"}
+            activities={upcomingActivities}
+          />
         </section>
 
         <section id="pastEvents" className="bg-gray-100 py-16">
-          <Activities title={"What we've done in the past"} activities={pastActivities} />
+          <Activities
+            title={"What we've done in the past"}
+            activities={pastActivities}
+          />
         </section>
 
         <section id="team" className="py-16">

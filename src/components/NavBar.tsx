@@ -7,7 +7,7 @@ export default function NavBar() {
         <a href="/" onClick={() => handleScroll("#about")} className="cursor-pointer">
           <img src="/logo.png" alt="Non-Profit Logo" className="h-12" />
         </a>
-        <div className="space-x-6">
+        <div className="hidden sm:block space-x-6">
           <a
             onClick={() => handleScroll("#about")}
             className="text-blue-600 transition-colors hover:text-blue-800 curser-pointer"
