@@ -65,13 +65,13 @@ export default function NonProfitWebsite() {
                 </p>
                 <p className="mb-4">
                   We engage youths through hands-on learning and expand
-                  students' knowledge in a variety of engineering fields. We
+                  students&#39; knowledge in a variety of engineering fields. We
                   inspire our youths to develop leadership, teamwork, and
                   communication skills and to create a positive impact in the
                   communities where they live and serve.
                 </p>
                 <p className="font-semibold">
-                  We are proud to be PVSA (President's Volunteer Service Award)
+                  We are proud to be PVSA (President&#39;s Volunteer Service Award)
                   approved, recognizing the dedication of our volunteers.Our
                   organization is PVSA approved and we are able to provide
                   students with official volunteer hours. Volunteers are also
@@ -105,7 +105,7 @@ export default function NonProfitWebsite() {
 
         <section id="pastEvents" className="bg-gray-100 py-24">
           <Activities
-            title={"What we've done in the past"}
+            title={"What we have done in the past"}
             activities={pastActivities}
           />
         </section>

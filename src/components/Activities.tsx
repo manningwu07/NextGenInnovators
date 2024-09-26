@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useState } from "react";
-import { Activity } from "~/types/event";
+import type { Activity } from "~/types/event";
 
 interface props {
   title: string;

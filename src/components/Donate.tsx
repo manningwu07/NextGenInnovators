@@ -37,7 +37,7 @@ export default function DonateModal() {
               To inspire the next generation of engineers by teaching youths at
               an early age and exposing them to the possibilities of
               engineering. Our goal is to teach our classes for free in hopes to
-              reach youths who are underserved and can't afford STEM programs.
+              reach youths who are underserved and can&#39;t afford STEM programs.
             </p>
 
             <p className="mb-4">Your support is greatly appreciated!</p>
