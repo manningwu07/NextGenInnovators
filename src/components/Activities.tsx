@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useState } from "react";
 import type { Activity } from "~/types/event";
+import Image from "next/image";
 
 interface props {
   title: string;
@@ -22,11 +23,15 @@ export default function Activities({title, activities}: props) {
             whileHover={{ scale: 1.05 }}
             onClick={() => setSelectedActivity(activity)}
           >
-            <img
-              src={activity.image}
-              alt={activity.title}
-              className="h-48 w-full object-cover"
-            />
+            <div className="relative h-48 w-full">
+              <Image
+                src={activity.image}
+                alt={activity.title}
+                layout="fill"  
+                objectFit="cover" 
+                className="rounded-lg"
+              />
+            </div>
             <div className="p-4">
               <h3 className="mb-2 text-xl font-semibold">{activity.title}</h3>
               <p className="text-gray-600">
@@ -56,11 +61,15 @@ export default function Activities({title, activities}: props) {
                 <X size={24} />
               </button>
             </div>
-            <img
-              src={selectedActivity.image}
-              alt={selectedActivity.title}
-              className="mb-4 h-64 w-full rounded-lg object-cover"
-            />
+            <div className="relative mb-4 h-64 w-full">
+              <Image
+                src={selectedActivity.image}
+                alt={selectedActivity.title}
+                layout="fill"  
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
             <p>{selectedActivity.description}</p>
           </motion.div>
         </motion.div>

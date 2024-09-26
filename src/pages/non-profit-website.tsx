@@ -5,7 +5,7 @@ import Activities from "~/components/Activities";
 import TeamMembers from "~/components/TeamMembers";
 import DonateModal from "~/components/Donate";
 import Link from "next/link";
-import { Activity } from "~/types/event";
+import type { Activity } from "~/types/event";
 import upcomingActivities from '~/activities/upcomingActivities.json';
 import pastActivities from '~/activities/pastActivities.json';
 

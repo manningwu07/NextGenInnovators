@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav className="fixed left-0 right-0 top-0 z-50 bg-white bg-opacity-90 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-2">
         <Link href="/" className="cursor-pointer">
-          <Image src="/public/logo.png" alt="Non-Profit Logo" width={50} height={50} className="h-12"> </Image>  
+          <Image src="/logo.png" alt="Non-Profit Logo" width={75} height={50} className="h-12"/>
         </Link>
         <div className="hidden sm:block space-x-6">
           <a
@@ -17,7 +17,7 @@ export default function NavBar() {
             About
           </a>
           <a
-            onClick={() => handleScroll("#events")}
+            onClick={() => handleScroll("#upcomingEvents")}
             className="text-blue-600 transition-colors hover:text-blue-800 curser-pointer"
           >
             Events

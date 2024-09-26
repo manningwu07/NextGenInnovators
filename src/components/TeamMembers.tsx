@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-// Fill in information for each team member; you can add or delete new team 
-// members as needed - should be adaptive to the number of team members 
+// Fill in information for each team member; you can add or delete new team
+// members as needed - should be adaptive to the number of team members
 
 // To link the images, put your image in the Team_Members folder inside the public folder (all images should go there)
-// and use the following format for the image path: "/public/Team_Members/image-name.[file-type]"  
+// and use the following format for the image path: "/Team_Members/image-name.[file-type]"
 // Keep in mind the image size should be square aspect ratio and will display 128x128 pixels - just take a picture of your head and crop it to square
 
 const teamMembers = [
@@ -16,7 +17,7 @@ const teamMembers = [
   {
     name: "Jacob Jung",
     role: "Fill here",
-    image: "/placeholder.svg?height=150&width=150",
+    image: "/placeholder.svg?height=150&width=150", 
   },
   {
     name: "Dylan Price",
@@ -50,10 +51,12 @@ export default function TeamMembers() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
           >
-            <img
+            <Image
               src={member.image}
               alt={member.name}
-              className="mx-auto mb-4 h-32 w-32 rounded-full"
+              width={128}
+              height={128}
+              className="mx-auto mb-4 rounded-full"
             />
             <h3 className="text-lg font-semibold">{member.name}</h3>
             <p className="text-gray-600">{member.role}</p>
