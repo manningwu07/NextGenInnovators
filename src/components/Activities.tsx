@@ -27,8 +27,9 @@ export default function Activities({title, activities}: props) {
               <Image
                 src={activity.image}
                 alt={activity.title}
-                layout="fill"  
-                objectFit="cover" 
+                fill
+                sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
             </div>
@@ -56,7 +57,7 @@ export default function Activities({title, activities}: props) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mb-4 flex items-start justify-between">
-              <h3 className="text-2xl font-bold">{selectedActivity.title}</h3>
+              <h3 className="text-2xl font-bold pr-2">{selectedActivity.title}</h3>
               <button onClick={() => setSelectedActivity(null)}>
                 <X size={24} />
               </button>
@@ -65,8 +66,9 @@ export default function Activities({title, activities}: props) {
               <Image
                 src={selectedActivity.image}
                 alt={selectedActivity.title}
-                layout="fill"  
-                objectFit="cover"
+                fill
+                sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 100vw"
+                style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
             </div>

@@ -36,12 +36,22 @@ const teamMembers = [
   },
 ];
 
+// Define a mapping from team member count to grid column classes
+const gridColsClass = teamMembers.length === 1 ? 'md:grid-cols-1' :
+                      teamMembers.length === 2 ? 'md:grid-cols-2' :
+                      teamMembers.length === 3 ? 'md:grid-cols-3' :
+                      teamMembers.length === 4 ? 'md:grid-cols-4' :
+                      teamMembers.length === 5 ? 'md:grid-cols-5' :
+                      'md:grid-cols-4'; // Default to 4 columns if more than 5 members
+
+console.log(gridColsClass)
+
 export default function TeamMembers() {
   return (
     <div className="container mx-auto px-4">
       <h2 className="mb-8 text-center text-3xl font-bold">Our Team</h2>
       <div
-        className={`mb-4 grid gap-8 sm:grid-cols-2 ${teamMembers.length <= 5 ? `md:grid-cols-${teamMembers.length}` : `md:grid-cols-4`}`}
+        className={`mb-4 grid gap-8 sm:grid-cols-2 ${gridColsClass}`}
       >
         {teamMembers.map((member, index) => (
           <motion.div
