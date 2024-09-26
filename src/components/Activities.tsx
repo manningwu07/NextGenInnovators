@@ -3,33 +3,17 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import { Activity } from "~/types/event";
 
-const activities: Activity[] = [
-  {
-    title: "Title",
-    image: "/placeholder.svg?height=200&width=300",
-    description:
-      "Description",
-  },
-  {
-    title: "Title",
-    image: "/placeholder.svg?height=200&width=300",
-    description:
-      "Description",
-  },
-  {
-    title: "Title",
-    image: "/placeholder.svg?height=200&width=300",
-    description:
-      "Description",
-  },
-];
+interface props {
+  title: string;
+  activities: Activity[];
+}
 
-export default function Activities() {
+export default function Activities({title, activities}: props) {
     const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
 
   return (
     <div className="container mx-auto px-4">
-      <h2 className="mb-8 text-center text-3xl font-bold">Upcoming Events</h2>
+      <h2 className="mb-8 text-center text-3xl font-bold">{title}</h2>
       <div className="grid gap-8 md:grid-cols-3">
         {activities.map((activity) => (
           <motion.div

@@ -5,6 +5,17 @@ import Activities from "~/components/Activities";
 import TeamMembers from "~/components/TeamMembers";
 import DonateModal from "~/components/Donate";
 import Link from "next/link";
+import { Activity } from "~/types/event";
+
+const upcomingActivities: Activity[] = require("~/activities/upcomingActivities.json");
+const pastActivities: Activity[] = require("~/activities/pastActivities.json");
+
+export const handleScroll = (location: string) => {
+  const section = document.querySelector(location);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export default function NonProfitWebsite() {
   return (
@@ -18,19 +29,22 @@ export default function NonProfitWebsite() {
             Non-Profit Organization devoted to teaching students about
             engineering
           </p>
-          <Link href="/#about">
+          <div
+            onClick={() => handleScroll("#about")}
+            className="cursor-pointer"
+          >
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 2 }}
             >
               <ChevronDown size={32} className="mx-auto" />
             </motion.div>
-          </Link>
+          </div>
         </div>
       </header>
 
       <main>
-        <section id="about" className="py-16">
+        <section id="about" className="scroll-smooth py-16">
           <div className="container mx-auto px-4">
             <h2 className="mb-8 text-center text-3xl font-bold">About Us</h2>
             <div className="grid gap-8 md:grid-cols-2">
@@ -60,14 +74,25 @@ export default function NonProfitWebsite() {
                 <h3 className="mb-4 text-center text-2xl font-semibold">
                   Our Mission
                 </h3>
-                <p className="text-center text-lg">Type some stuff here</p>
+                <p className="text-center text-lg">
+                  To collaborate with local communities and educational partners
+                  to inspire and empower students in Dublin and beyond. We are
+                  committed to expanding opportunities in engineering education,
+                  ensuring that all students—regardless of background—have
+                  access to hands-on learning experiences that spark curiosity
+                  and innovation.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="events" className="bg-gray-100 py-16">
-          <Activities />
+        <section id="upcomingEvents" className="bg-gray-100 py-16">
+          <Activities title={"Upcoming Events"} activities={upcomingActivities} />
+        </section>
+
+        <section id="pastEvents" className="bg-gray-100 py-16">
+          <Activities title={"What we've done in the past"} activities={pastActivities} />
         </section>
 
         <section id="team" className="py-16">
