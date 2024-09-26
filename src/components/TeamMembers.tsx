@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// Fill in information for each team member; you can add or delete new team members as needed - should be adaptive to the number of team members
 const teamMembers = [
   {
     name: "Logan Chook",
@@ -28,11 +29,14 @@ const teamMembers = [
   },
 ];
 
+
+
+
 export default function TeamMembers() {
   return (
     <div className="container mx-auto px-4">
       <h2 className="mb-8 text-center text-3xl font-bold">Our Team</h2>
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-5 mb-4">
+      <div className={`grid gap-8 sm:grid-cols-2 mb-4 ${teamMembers.length <= 5? `md:grid-cols-${teamMembers.length}` : `md:grid-cols-4`}`}> 
         {teamMembers.map((member, index) => (
           <motion.div
             key={index}
