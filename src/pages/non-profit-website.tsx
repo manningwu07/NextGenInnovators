@@ -6,9 +6,13 @@ import TeamMembers from "~/components/TeamMembers";
 import DonateModal from "~/components/Donate";
 import Link from "next/link";
 import { Activity } from "~/types/event";
+import upcomingActivities from '~/activities/upcomingActivities.json';
+import pastActivities from '~/activities/pastActivities.json';
 
-const upcomingActivities: Activity[] = require("~/activities/upcomingActivities.json");
-const pastActivities: Activity[] = require("~/activities/pastActivities.json");
+
+// Use the type to assert the imported JSON data
+const upcomingActivitiesTyped: Activity[] = upcomingActivities;
+const pastActivitiesTyped: Activity[] = pastActivities;
 
 export const handleScroll = (location: string) => {
   const section = document.querySelector(location);
@@ -99,14 +103,14 @@ export default function NonProfitWebsite() {
         <section id="upcomingEvents" className="bg-gray-100 py-24">
           <Activities
             title={"Upcoming Events"}
-            activities={upcomingActivities}
+            activities={upcomingActivitiesTyped}
           />
         </section>
 
         <section id="pastEvents" className="bg-gray-100 py-24">
           <Activities
             title={"What we have done in the past"}
-            activities={pastActivities}
+            activities={pastActivitiesTyped}
           />
         </section>
 
