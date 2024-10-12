@@ -154,7 +154,7 @@ export default function NonProfitWebsite() {
             <span className="text-white hover:underline">nextgeninnovators24@gmail.com</span>
           </Link>
         </div>
-        <div className="container mx-auto px-4 text-center flex justify-between">
+        <div className="container mx-auto px-4 text-center md:flex md:justify-between">
           <p>&copy; 2024 NextGenInnovators. All rights reserved.</p>
           <p>Made by Manning Wu (Class of 2025)</p>
         </div>
