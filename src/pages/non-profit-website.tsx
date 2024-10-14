@@ -6,8 +6,8 @@ import TeamMembers from "~/components/TeamMembers";
 import DonateModal from "~/components/Donate";
 import Link from "next/link";
 import type { Activity } from "~/types/event";
-import upcomingActivities from '~/changeContentHere/upcomingActivities.json';
-import pastActivities from '~/changeContentHere/pastActivities.json';
+import upcomingActivities from '~/changeContentHere/CurrentEvents.json';
+import pastActivities from '~/changeContentHere/PastEvents.json';
 
 
 // Use the type to assert the imported JSON data

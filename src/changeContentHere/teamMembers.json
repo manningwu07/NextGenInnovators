@@ -1,27 +1,27 @@
 [
     {
       "name": "Logan Chook",
-      "role": "Fill here",
+      "role": "President",
       "image": "/placeholder.svg?height=150&width=150"
     },
     {
       "name": "Jacob Jung",
-      "role": "Fill here",
+      "role": "Vice-President",
       "image": "/placeholder.svg?height=150&width=150"
     },
     {
       "name": "Dylan Price",
-      "role": "Fill here",
+      "role": "Treasurer",
       "image": "/placeholder.svg?height=150&width=150"
     },
     {
       "name": "Eric Lee",
-      "role": "Fill here",
+      "role": "Secretary",
       "image": "/placeholder.svg?height=150&width=150"
     },
     {
       "name": "Jonathan Joh",
-      "role": "Fill here",
+      "role": "Outreach Manager",
       "image": "/placeholder.svg?height=150&width=150"
     }
   ]
