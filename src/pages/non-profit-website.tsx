@@ -10,7 +10,6 @@ import upcomingActivities from '~/changeContentHere/CurrentEvents.json';
 import pastActivities from '~/changeContentHere/PastEvents.json';
 
 
-// Use the type to assert the imported JSON data
 const upcomingActivitiesTyped: Activity[] = upcomingActivities;
 const pastActivitiesTyped: Activity[] = pastActivities;
 
@@ -155,8 +154,9 @@ export default function NonProfitWebsite() {
             <span className="text-white hover:underline">nextgeninnovators24@gmail.com</span>
           </Link>
         </div>
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; Copyright stuff add here. All rights reserved.</p>
+        <div className="container mx-auto px-4 text-center md:flex md:justify-between">
+          <p>&copy; 2024 NextGenInnovators. All rights reserved.</p>
+          <p>Made by Manning Wu (Class of 2025)</p>
         </div>
       </footer>
     </div>
