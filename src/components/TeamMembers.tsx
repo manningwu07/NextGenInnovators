@@ -10,33 +10,6 @@ import teamMembersJSON from "~/changeContentHere/teamMembers.json";
 // Keep in mind the image size should be square aspect ratio and will display 128x128 pixels - just take a picture of your head and crop it to square
 
 const teamMembers = teamMembersJSON;
-// const teamMembers = [
-//   {
-//     name: "Logan Chook",
-//     role: "Fill here",
-//     image: "/placeholder.svg?height=150&width=150",
-//   },
-//   {
-//     name: "Jacob Jung",
-//     role: "Fill here",
-//     image: "/placeholder.svg?height=150&width=150", 
-//   },
-//   {
-//     name: "Dylan Price",
-//     role: "Fill here",
-//     image: "/placeholder.svg?height=150&width=150",
-//   },
-//   {
-//     name: "Eric Lee",
-//     role: "Fill here",
-//     image: "/placeholder.svg?height=150&width=150",
-//   },
-//   {
-//     name: "Jonathan Joh",
-//     role: "Fill here",
-//     image: "/placeholder.svg?height=150&width=150",
-//   },
-// ];
 
 // Define a mapping from team member count to grid column classes
 const gridColsClass = teamMembers.length === 1 ? 'md:grid-cols-1' :

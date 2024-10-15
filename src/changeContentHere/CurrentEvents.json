@@ -1,17 +1,17 @@
 [
   {
     "title": "Enrichment Program with Cottonwood Middle School",
-    "image": "/CCS(1).png",
+    "image": "/Enrichment_Program/Cottonwood(1).png",
     "description": "Bi-weekly our team presents lessons and projects surrounding varying engineering fields to a class of 25+ middle schoolers."
   },
   {
     "title": "Enrichment Program with Fallon Middle School",
-    "image": "/Enrichment_Program_Fallon_MS/Enrichment_Program(2).jpg",
+    "image": "/Enrichment_Program/Enrichment_Program(2).jpg",
     "description": "Bi-weekly our team presents lessons and projects surrounding varying engineering fields to a class of 25+ middle schoolers."
   },
   {
-    "title": "",
-    "image": "",
-    "description": ""
+    "title": "Test",
+    "image": "/Enrichment_Program/Enrichment_Program(4).jpg",
+    "description": "Bi-weekly our team presents lessons and projects surrounding varying engineering fields to a class of 25+ middle schoolers."
   }
 ]

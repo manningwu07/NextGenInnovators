@@ -12,6 +12,8 @@ import pastActivities from '~/changeContentHere/PastEvents.json';
 
 const upcomingActivitiesTyped: Activity[] = upcomingActivities;
 const pastActivitiesTyped: Activity[] = pastActivities;
+console.log("UpcomingActivities", upcomingActivitiesTyped);
+console.log("PastActivities", pastActivitiesTyped);
 
 export const handleScroll = (location: string) => {
   const section = document.querySelector(location);
